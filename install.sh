@@ -1,4 +1,6 @@
 #!/bin/bash 
+# initiate conda
+eval "$(conda shell.bash hook)"
 
 # create pyseer environment
 conda create -n pyseer
