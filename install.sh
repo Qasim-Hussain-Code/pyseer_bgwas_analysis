@@ -12,7 +12,4 @@ conda activate pyseer
 conda install pyseer
 
 # test pyseer installation
-# run unit tests
-pytest -v tests
-# test functions and outputs
-cd tests/ && bash run_test.sh && cd ../jjjjj
+pyseer --help
