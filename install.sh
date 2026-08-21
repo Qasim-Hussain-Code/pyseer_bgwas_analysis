@@ -13,3 +13,12 @@ conda install pyseer
 
 # test pyseer installation
 pyseer --help
+
+# install fsm-lite
+conda install fsm-lite
+
+# install seer
+conda install seer
+
+# conda install unitig-counter and unitig-caller
+conda install unitig-counter unitig-caller
