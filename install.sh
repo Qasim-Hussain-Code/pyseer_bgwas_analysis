@@ -13,4 +13,4 @@ conda install pyseer
 # run unit tests
 pytest -v tests
 # test functions and outputs
-cd tests/ && bash run_test.sh && cd ../
+cd tests/ && bash run_test.sh && cd ../jjjjj
