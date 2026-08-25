@@ -30,5 +30,10 @@ mv ERR065292_1.fastq.gz data/
 mv ERR065290_2.fastq.gz data/
 mv ERR065293_2.fastq.gz data/   
 
+# change to the data directory
+cd data
+
+# extrct the downloaded files
+gunzip *.fastq.gz
 
 
