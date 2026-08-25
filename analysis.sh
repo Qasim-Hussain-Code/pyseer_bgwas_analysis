@@ -10,6 +10,6 @@ conda activate pyseer
 # get the data
 wget https://doi.org/10.6084/m9.figshare.7588832
 
-# extract the archive
-tar xvf pyseer_tutorial.tar.bz2
+# extract the data
+unzip 7588832
 

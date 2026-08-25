@@ -1,1 +1,4 @@
-
+# ignore data files
+*.fastq.gz
+*.zip
+*.m9.figshare.7588832
