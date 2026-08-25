@@ -8,8 +8,7 @@ eval "$(conda shell.bash hook)"
 conda activate pyseer
 
 # get the data
-wget --continue --no-verbose --output-document=pyseer_tutorial.tar.bz2 \
-  https://ndownloader.figshare.com/files/14091179
-  
+wget --content-disposition "https://ndownloader.figshare.com/files/14091179"
+
 # extract the archive
 tar xvf pyseer_tutorial.tar.bz2
