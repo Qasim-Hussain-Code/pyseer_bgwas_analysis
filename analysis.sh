@@ -28,3 +28,9 @@ scree_plot_pyseer mash.tsv
 
 # run the analysis on the COGs
 pyseer --phenotypes resistances.pheno --pres gene_presence_absence.Rtab --distances mash.tsv --save-m mash_mds --max-dimensions 8 > penicillin_COGs.txt
+
+# take a look at the top hits
+sort -g -k4,4 penicillin_COGs.txt | head
+
+# perform analysis using the SNPs
+pyseer --phenotypes resistances.pheno --vcf snps.vcf.gz --load-m mash_mds.pkl --lineage --print-samples > penicillin_SNPs.txt
