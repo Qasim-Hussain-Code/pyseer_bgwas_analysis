@@ -2,3 +2,20 @@
 *.fastq.gz
 *.zip
 *.m9.figshare.7588832
+
+# Bioinformatics inputs and generated analysis outputs
+*.fa
+*.fasta
+*.fna
+*.gff
+*.vcf
+*.vcf.gz
+*.tree
+*.Rtab
+*.pheno
+*.msh
+*.pkl
+*.tsv
+*.png
+*.tar.bz2
+/assemblies/
