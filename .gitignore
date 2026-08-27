@@ -19,3 +19,5 @@
 *.png
 *.tar.bz2
 /assemblies/
+/fsm_file_list.txt
+/penicillin_COGs.txt
