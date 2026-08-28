@@ -21,3 +21,4 @@
 /assemblies/
 /fsm_file_list.txt
 /penicillin_COGs.txt
+*.csv
