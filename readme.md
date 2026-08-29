@@ -1,1 +1,1 @@
-# A worlflow to run the genome wide association study of bacteria
+# A pipeline to run the genome wide association study of bacteria
