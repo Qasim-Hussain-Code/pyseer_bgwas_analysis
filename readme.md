@@ -1,1 +1,1 @@
-# Coming soon; stay tuned..
+# A worlflow to run the genome wide association study of bacteria
