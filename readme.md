@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 # Bacterial Genome Wide Association Study of Penicillin Resistance in *Streptococcus pneumoniae*
 
 A reproducible bacterial genome wide association study (bGWAS) pipeline designed to identify genetic determinants of penicillin resistance across 604 clinical *Streptococcus pneumoniae* isolates. This workflow evaluates three distinct variant representations (single nucleotide polymorphisms, clusters of orthologous groups, and reference-free k-mers) using both fixed effects models and linear mixed models (LMM) to separate genuine biological signals from population structure confounding.
@@ -53,6 +55,7 @@ An empirical significance threshold is established based on the number of unique
 ├── install.sh               # Conda environment configuration script
 ├── readme.md                # Project documentation
 ├── .gitignore               # Version control exclusion rules
+├── LICENSE                  # Open source MIT license terms
 │
 ├── resistances.pheno        # Excluded data: binary phenotype matrix
 ├── gene_presence_absence.Rtab  # Excluded data: pangenome matrix
@@ -128,4 +131,4 @@ The pipeline automatically performs data retrieval, distance matrix construction
 
 ## License
 
-This repository is shared for educational and scientific research purposes. Consult individual component documentation for software licensing terms.
+This project is open-source software licensed under the terms of the MIT License. See the [LICENSE](LICENSE) file for the full text. Third-party packages and tutorial dataset assets retain their respective upstream software licenses.
