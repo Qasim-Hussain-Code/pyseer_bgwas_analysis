@@ -1,5 +1,5 @@
 # ==============================================================================
-# Bacterial GWAS Analysis — .gitignore
+# Bacterial GWAS Analysis .gitignore
 # ==============================================================================
 # This repository tracks only the reproducible pipeline (scripts, manifests,
 # and documentation). All raw data, intermediate results, and large binary
@@ -60,10 +60,11 @@ gene_hits.txt
 # ---- K-mer files -------------------------------------------------------------
 fsm_kmers.txt.gz
 
-# ---- Figures -----------------------------------------------------------------
+# ---- Figures and logs --------------------------------------------------------
 *.png
 *.pdf
 *.svg
+*.log
 
 # ---- FSM file list (generated from assemblies manifest) ----------------------
 fsm_file_list.txt
