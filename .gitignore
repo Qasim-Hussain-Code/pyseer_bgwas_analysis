@@ -1,24 +1,87 @@
-# ignore data files
-*.fastq.gz
-*.zip
-*.m9.figshare.7588832
+# ==============================================================================
+# Bacterial GWAS Analysis — .gitignore
+# ==============================================================================
+# This repository tracks only the reproducible pipeline (scripts, manifests,
+# and documentation). All raw data, intermediate results, and large binary
+# outputs are excluded and should be regenerated via analysis.sh.
+# ==============================================================================
 
-# Bioinformatics inputs and generated analysis outputs
+# ---- Raw / downloaded data archives -----------------------------------------
+*.tar.bz2
+*.zip
+
+# ---- Genome assemblies and sequences ----------------------------------------
+/assemblies/
 *.fa
 *.fasta
 *.fna
+
+# ---- Genome annotations -----------------------------------------------------
 *.gff
+*.gff3
+
+# ---- Variant calls -----------------------------------------------------------
 *.vcf
 *.vcf.gz
-*.tree
-*.Rtab
+*.vcf.gz.tbi
+
+# ---- Phenotype and gene presence/absence matrices ----------------------------
 *.pheno
+*.Rtab
+
+# ---- Phylogenetic trees ------------------------------------------------------
+*.tree
+*.nwk
+*.treefile
+
+# ---- Mash distance / sketch outputs -----------------------------------------
 *.msh
-*.pkl
 *.tsv
+
+# ---- Serialised model objects ------------------------------------------------
+*.pkl
+*.pickle
+
+# ---- Pyseer association results ----------------------------------------------
+penicillin_COGs.txt
+penicillin_SNPs.txt
+penicillin_kmers.txt
+significant_kmers.txt
+kmer_patterns.txt
+lineage_effects.txt
+
+# ---- Phandango / Manhattan plots ---------------------------------------------
+*.plot
+
+# ---- Annotation outputs -----------------------------------------------------
+annotated_kmers.txt
+gene_hits.txt
+
+# ---- K-mer files -------------------------------------------------------------
+fsm_kmers.txt.gz
+
+# ---- Figures -----------------------------------------------------------------
 *.png
-*.tar.bz2
-/assemblies/
-/fsm_file_list.txt
-/penicillin_COGs.txt
-*.csv
+*.pdf
+*.svg
+
+# ---- FSM file list (generated from assemblies manifest) ----------------------
+fsm_file_list.txt
+
+# ---- Python / system caches --------------------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+
+# ---- OS artefacts ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# ---- Editor / IDE ------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
